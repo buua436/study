@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<c3p0-config>
+	<default-config>
+		<!-- key value键值对 -->
+		<!--连接数据库的url  -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/test1?&amp;useSSL=false&amp;serverTimezone=UTC</property>
+		<!-- 驱动类字符串 -->
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+		
+		<!--checkoutTimeout:检查超时时间  -->
+		<property name="checkoutTimeout">30000</property>
+		<!-- initialPoolSize:初始化连接数 -->
+		<property name="initialPoolSize">10</property>
+		<!-- maxIdleTime:最长的闲置时间 -->
+		<property name="maxIdleTime">30</property>
+		<!-- maxPoolSize:最大连接数 -->
+		<property name="maxPoolSize">100</property>
+		<!-- minPoolSize:最小连接数 -->
+		<property name="minPoolSize">10</property>
+		<property name="maxStatements">200</property>
+	</default-config>
+	
+
+</c3p0-config>
+
